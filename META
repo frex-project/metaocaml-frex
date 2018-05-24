@@ -1,0 +1,6 @@
+version = "dev"
+description = "Partially static data as free extension of algebras"
+requires = ""
+archive(byte) = "ps.cma"
+archive(native) = "ps.cmxa"
+exists_if = "ps.cma"

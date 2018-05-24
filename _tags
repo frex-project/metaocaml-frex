@@ -1,0 +1,4 @@
+true: short_paths, debug
+
+"lib": include
+"test": include
