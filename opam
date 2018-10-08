@@ -12,6 +12,6 @@ license: "MIT"
 build: [make]
 install: [make "install"]
 remove: ["ocamlfind" "remove" "frex"]
-depends: [ "ocamlfind" ]
+depends: [ "ocamlfind" "ocamlbuild" ]
 build-test: [make "test"]
 available: [ compiler = "4.04.0+BER"]
