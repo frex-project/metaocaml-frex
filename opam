@@ -6,7 +6,7 @@ authors: [ "Tamara von Glehn <T.L.Von-Glehn@dpmms.cam.ac.uk>"
            "Ohad Kammar <ohad.kammar@cs.ox.ac.uk>"
            "Jeremy Yallop <yallop@gmail.com>" ]
 homepage: "https://github.com/yallop/metaocaml-frex"
-dev-repo: "http://github.com/yallop/metaocaml-frex.git"
+dev-repo: "https://github.com/yallop/metaocaml-frex.git"
 bug-reports: "http://github.com/yallop/metaocaml-frex/issues"
 license: "MIT"
 build: [make]
