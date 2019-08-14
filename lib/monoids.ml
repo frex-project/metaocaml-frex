@@ -25,8 +25,9 @@ struct
   struct
     type tx = Free(X).Alg.T.t
 
-    let (>>=) (xs : tx) (f : X.t -> C.T.t) : C.T.t =
-      List.fold_right C.Op.(<*>) (List.map f xs) C.Op.unit
+    let (>>=) (xs : tx) (f : X.t -> C.T.t) : C.T.t = match xs with
+      | [x] -> f x
+      | xs -> List.fold_right C.Op.(<*>) (List.map f xs) C.Op.unit
   end
 end
 
