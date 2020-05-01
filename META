@@ -1,4 +1,4 @@
-version = "dev"
+version = "0.1"
 description = "Partially static data as free extension of algebras"
 requires = ""
 archive(byte) = "ps.cma"
