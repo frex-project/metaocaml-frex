@@ -186,7 +186,7 @@ let () = begin
       to be done by the generated code, even though both are known
       statically. *)
   Format.printf "(* generated code using dynamic strings *)@\n%a@\n"
-  Print_code.print_code
+  print_code
     .< fun x y ->
       .~(Printf_staged.(sprintf
                           ((int ++ lit "a") ++ (lit "b" ++ int)))
@@ -202,7 +202,7 @@ let () = begin
       reducing 4 concatenations to 2.
   *)
   Format.printf "(* generated code using partially-static strings *)@\n%a@\n"
-  Print_code.print_code
+  print_code
     .< fun x y ->
       .~(Printf_partially_static.(sprintf
                                     ((int ++ lit "a") ++ (lit "b" ++ int)))
