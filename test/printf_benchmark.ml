@@ -220,12 +220,12 @@ let () = begin
   Printf.printf "staged\n\n" ;
 
   Format.fprintf Format.std_formatter "let pr0 = %a@\n"
-    Print_code.print_code 
+    print_code 
     .< .~(Printf_staged.(sprintf (lit ""))) >.
   ;
 
   Format.fprintf Format.std_formatter "let pr1 = %a@\n"
-    Print_code.print_code 
+    print_code 
     .< fun x1 -> 
       .~(Printf_staged.(sprintf
                           (lit "(" ++ str ++ lit ")")
@@ -233,7 +233,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let pr2 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 -> 
       .~(Printf_staged.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -244,7 +244,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let pr3 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 -> 
       .~(Printf_staged.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -258,7 +258,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let pr4 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 -> 
       .~(Printf_staged.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -275,7 +275,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let pr5 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 -> 
       .~(Printf_staged.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -295,7 +295,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let pr6 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 x6 -> 
       .~(Printf_staged.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -318,7 +318,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let pr7 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 x6 x7 -> 
       .~(Printf_staged.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -344,7 +344,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let pr8 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 x6 x7 x8 -> 
       .~(Printf_staged.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -373,7 +373,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let pr9 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 x6 x7 x8 x9 -> 
       .~(Printf_staged.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -410,12 +410,12 @@ let () = begin
   Printf.printf "staged + partially-static\n\n" ;
 
   Format.fprintf Format.std_formatter "let ps0 = %a@\n"
-    Print_code.print_code 
+    print_code 
     .< .~(Printf_partially_static.(sprintf (lit ""))) >.
   ;
 
   Format.fprintf Format.std_formatter "let ps1 = %a@\n"
-    Print_code.print_code 
+    print_code 
     .< fun x1 -> 
       .~(Printf_partially_static.(sprintf
                           (lit "(" ++ str ++ lit ")")
@@ -423,7 +423,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let ps2 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 -> 
       .~(Printf_partially_static.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -434,7 +434,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let ps3 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 -> 
       .~(Printf_partially_static.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -448,7 +448,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let ps4 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 -> 
       .~(Printf_partially_static.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -465,7 +465,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let ps5 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 -> 
       .~(Printf_partially_static.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -485,7 +485,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let ps6 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 x6 -> 
       .~(Printf_partially_static.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -508,7 +508,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let ps7 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 x6 x7 -> 
       .~(Printf_partially_static.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -534,7 +534,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let ps8 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 x6 x7 x8 -> 
       .~(Printf_partially_static.(sprintf
                           ((lit "(" ++ str ++ lit ")")
@@ -563,7 +563,7 @@ let () = begin
   ;
 
   Format.fprintf Format.std_formatter "let ps9 = %a@\n"
-    Print_code.print_code
+    print_code
     .< fun x1 x2 x3 x4 x5 x6 x7 x8 x9 -> 
       .~(Printf_partially_static.(sprintf
                           ((lit "(" ++ str ++ lit ")")
