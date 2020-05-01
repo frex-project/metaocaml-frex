@@ -1,17 +1,23 @@
-opam-version: "1.2"
+opam-version: "2.0"
 name: "frex"
 version: "dev"
+synopsis: "Partially-static data as free extension of algebras"
 maintainer: "yallop@gmail.com"
 authors: [ "Tamara von Glehn <T.L.Von-Glehn@dpmms.cam.ac.uk>"
            "Ohad Kammar <ohad.kammar@cs.ox.ac.uk>"
            "Jeremy Yallop <yallop@gmail.com>" ]
 homepage: "https://github.com/yallop/metaocaml-frex"
-dev-repo: "https://github.com/yallop/metaocaml-frex.git"
-bug-reports: "http://github.com/yallop/metaocaml-frex/issues"
+dev-repo: "git+https://github.com/yallop/metaocaml-frex.git"
+bug-reports: "https://github.com/yallop/metaocaml-frex/issues"
 license: "MIT"
 build: [make]
 install: [make "install"]
 remove: ["ocamlfind" "remove" "frex"]
-depends: [ "ocamlfind" "ocamlbuild" ]
+depends: [
+   "ocamlfind"  {build}
+   "ocamlbuild" {build}
+   "ocaml-variants"
+     {= "4.07.1+BER" | = "4.04.0+BER" }
+]
 build-test: [make "test"]
-available: [ compiler = "4.04.0+BER"]
+
