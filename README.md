@@ -6,4 +6,4 @@ A MetaOCaml library for structured multi-stage programming, described in the fol
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jeremy Yallop, Tamara von Glehn and Ohad Kammar<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ICFP 2018](http://icfp18.sigplan.org/)<br/>
 
-See also: the [Haskell version of frex](https://github.com/yallop/haskell-frex).
+See also: the [Haskell version of frex](https://github.com/frex-project/haskell-frex).
