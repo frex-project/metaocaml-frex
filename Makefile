@@ -1,4 +1,4 @@
-all: check-compiler ps.cma ps.cmxa
+all: ps.cma ps.cmxa
 
 tests=printf_benchmark dot_product printf_example any_example # examples
 
