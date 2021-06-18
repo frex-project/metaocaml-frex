@@ -7,3 +7,5 @@ A MetaOCaml library for structured multi-stage programming, described in the fol
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ICFP 2018](http://icfp18.sigplan.org/)<br/>
 
 See also: the [Haskell version of frex](https://github.com/frex-project/haskell-frex).
+
+[![Frex workflow](https://github.com/frex-project/metaocaml-frex/actions/workflows/test.yml/badge.svg)](https://github.com/frex-project/metaocaml-frex/actions/workflows/test.yml)
