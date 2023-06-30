@@ -17,7 +17,7 @@ depends: [
    "ocamlfind"  {build}
    "ocamlbuild" {build}
    "ocaml-variants"
-     {= "4.07.1+BER" | = "4.04.0+BER" | = "4.11.1+BER" }
+     {= "4.07.1+BER" | = "4.04.0+BER" | = "4.11.1+BER" | = "4.14.1+BER" }
 ]
 build-test: [make "test"]
 
