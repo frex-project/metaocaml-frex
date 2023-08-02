@@ -10,14 +10,13 @@ homepage: "https://github.com/yallop/metaocaml-frex"
 dev-repo: "git+https://github.com/yallop/metaocaml-frex.git"
 bug-reports: "https://github.com/yallop/metaocaml-frex/issues"
 license: "MIT"
-build: [make]
+build: [[make]
+        [make "test"] {with-test}]
 install: [make "install"]
 remove: ["ocamlfind" "remove" "frex"]
 depends: [
    "ocamlfind"  {build}
    "ocamlbuild" {build}
    "ocaml-variants"
-     {= "4.07.1+BER" | = "4.04.0+BER" | = "4.11.1+BER" | = "4.14.1+BER" }
+     {= "4.02.1+modular-implicits-ber" | = "4.07.1+BER" | = "4.04.0+BER" | = "4.11.1+BER" | = "4.14.1+BER" }
 ]
-build-test: [make "test"]
-

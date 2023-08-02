@@ -3,4 +3,4 @@ true: short_paths, debug
 "lib": include
 "test": include
 
-<lib_test/*.*>: open_print_code
+<test/*.*>: open_print_code
