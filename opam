@@ -18,5 +18,5 @@ depends: [
    "ocamlfind"  {build}
    "ocamlbuild" {build}
    "ocaml-variants"
-     {= "4.02.1+modular-implicits-ber" | = "4.07.1+BER" | = "4.04.0+BER" | = "4.11.1+BER" | = "4.14.1+BER" }
+     {= "5.3.0+BER"}
 ]
