@@ -53,7 +53,7 @@ let cd_of_var : 'a. 'a var -> 'a code =
 module Var (A: sig type t end) : Setoid with type t = A.t var =
 struct
   type t = A.t var
-  let compare (Var (_, l)) (Var (_, r)) = Pervasives.compare l r
+  let compare (Var (_, l)) (Var (_, r)) = Stdlib.compare l r
 end
 
 (** Bags *)
@@ -88,13 +88,13 @@ struct
 
   let (<*>) n xs = M.map (fun k -> n * k) xs
 
-  let compare = M.compare Pervasives.compare
+  let compare = M.compare Stdlib.compare
 end
 
 module Int =
 struct
   type t = int
-  let compare = Pervasives.compare
+  let compare = Stdlib.compare
 
   let (<+>) = ( + )
   let (<*>) = ( * )
